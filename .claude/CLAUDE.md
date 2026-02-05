@@ -13,6 +13,7 @@ This project provides Claude Code infrastructure for working with Anki via AnkiC
 | Command | Description |
 |---------|-------------|
 | `/anki-create-card` | Create a flashcard from conversation |
+| `/anki-improve-card` | Review and improve existing card quality |
 | `/anki-sync-vault` | Sync Obsidian notes to Anki |
 | `/anki-review-session` | Interactive review session |
 | `/anki-deck-stats` | View deck statistics |
@@ -38,6 +39,9 @@ Auto-loaded when discussing Anki topics. Provides:
 ```
 # Create a card from current conversation
 /anki-create-card "What is X?" --deck MyDeck
+
+# Improve an existing card
+/anki-improve-card "tag:leech" --deck Programming
 
 # Check deck statistics
 /anki-deck-stats
