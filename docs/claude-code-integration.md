@@ -1,6 +1,6 @@
 # Claude Code Infrastructure for Anki Integration
 
-Research document for creating Claude Code Skills, Agents, and Scripts for working with Anki via AnkiConnect.
+> Technical reference for Claude Code Skills, Agents, and Scripts for working with Anki via AnkiConnect. For actionable quick references, see `.claude/skills/anki-conventions/references/`.
 
 ## Table of Contents
 
@@ -507,7 +507,7 @@ Update your agent memory with:
 - Enable `memory: user` for cross-session learning
 - Agents cannot spawn other agents
 
-### Hooks (`settings.json` → `hooks`)
+### Hooks (`settings.json` -> `hooks`)
 
 **Purpose:** Event-driven automation scripts.
 
@@ -624,29 +624,29 @@ exit 0
 
 ```
 User Request
-     │
-     ▼
-┌─────────────────┐
-│ Skill triggers? │──Yes──▶ Load anki-conventions
-└────────┬────────┘
-         │ No
-         ▼
-┌─────────────────┐
-│ /command used?  │──Yes──▶ Execute command workflow
-└────────┬────────┘
-         │ No
-         ▼
-┌─────────────────┐
-│ Complex task?   │──Yes──▶ Delegate to agent
-└────────┬────────┘
-         │ No
-         ▼
+     |
+     v
++------------------+
+| Skill triggers?  |--Yes--> Load anki-conventions
++--------+---------+
+         | No
+         v
++------------------+
+| /command used?   |--Yes--> Execute command workflow
++--------+---------+
+         | No
+         v
++------------------+
+| Complex task?    |--Yes--> Delegate to agent
++--------+---------+
+         | No
+         v
     Direct MCP call
-         │
-         ▼
-┌─────────────────┐
-│ Session ends    │──────▶ Hook captures insights
-└─────────────────┘
+         |
+         v
++------------------+
+| Session ends     |-------> Hook captures insights
++------------------+
 ```
 
 ---
@@ -666,11 +666,11 @@ User Request
 ### Context Management
 
 ```
-Metadata (always loaded)     → Skill descriptions (~100 words each)
-                              ↓
-SKILL.md body (on trigger)   → Anki conventions (~300 lines)
-                              ↓
-References (on demand)       → Detailed query syntax, patterns
+Metadata (always loaded)     -> Skill descriptions (~100 words each)
+                              |
+SKILL.md body (on trigger)   -> Anki conventions (~300 lines)
+                              |
+References (on demand)       -> Detailed query syntax, patterns
 ```
 
 ### Degrees of Freedom

@@ -2,6 +2,12 @@
 
 Best practices for creating effective Anki flashcards that maximize retention.
 
+## User-Specific Preferences
+
+**For programming/technical cards:** The atomic rule is relaxed. Longer cards with code snippets, multi-line examples, and contextual explanations are acceptable.
+
+See `programming-cards.md` for detailed technical card patterns.
+
 ## Core Principles
 
 ### 1. Atomic Cards
@@ -235,3 +241,9 @@ Before adding a card, verify:
 - [ ] Could this be split into smaller cards?
 - [ ] Does it connect to existing knowledge?
 - [ ] Are appropriate tags applied?
+
+## Related References
+
+- **Technical cards:** See `programming-cards.md` for code-specific patterns
+- **Maintenance:** See `card-maintenance.md` for reformulating problematic cards
+- **Organization:** See `deck-organization.md` for tagging strategies
