@@ -1,0 +1,42 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "command": ".claude/hooks/anki-session-capture.sh",
+        "timeout": 5000
+      }
+    ]
+  },
+  "permissions": {
+    "allow": [],
+    "deny": [],
+    "mcpServers": {
+      "anki": {
+        "command": "npx",
+        "args": ["-y", "@ankimcp/anki-mcp-server"]
+      },
+      "obsidian": {
+        "disabled": true
+      },
+      "atlassian": {
+        "disabled": true
+      }
+    }
+  },
+  "enabledPlugins": {
+    "backend-development@claude-code-workflows": false,
+    "firebase@firebase": false,
+    "voltagent-infra@voltagent-subagents": false,
+    "llm-application-dev@claude-code-workflows": false,
+    "documentation-generator@claude-code-templates": false,
+    "code-simplifier@claude-plugins-official": false,
+    "python-development@claude-code-workflows": false,
+    "claude-delegator@jarrodwatts-claude-delegator": false,
+    "claude-hud@claude-hud": true,
+    "commit-commands@claude-plugins-official": true,
+    "superpowers@claude-plugins-official": true
+  },
+  "disabledSkills": [
+    "para-method"
+  ]
+}
