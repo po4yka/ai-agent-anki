@@ -1,0 +1,34 @@
+# Ralph Configuration for AI Agent Anki
+# For autonomous long-running Anki card processing
+
+# === Rate Limiting ===
+# Conservative limits to prevent MCP overload and maintain Anki stability
+MAX_CALLS_PER_HOUR=50
+CALLS_BEFORE_PAUSE=15
+
+# === Timeouts ===
+# Longer timeout for batch processing operations
+CLAUDE_TIMEOUT_MINUTES=30
+IDLE_TIMEOUT_MINUTES=5
+
+# === Session Management ===
+# Critical for maintaining Anki connection across batches
+SESSION_CONTINUITY=true
+SESSION_EXPIRY_HOURS=4
+
+# === Checkpointing ===
+# Enable checkpoints to resume after failures
+CHECKPOINT_ENABLED=true
+CHECKPOINT_INTERVAL_CALLS=10
+
+# === Tool Allowlist ===
+# All Anki MCP tools plus file operations for logging
+ALLOWED_TOOLS="mcp__anki__addNote,mcp__anki__findNotes,mcp__anki__notesInfo,mcp__anki__updateNoteFields,mcp__anki__deleteNotes,mcp__anki__deckActions,mcp__anki__modelNames,mcp__anki__sync,Read,Write,Edit,Glob,Grep,Bash"
+
+# === Logging ===
+LOG_LEVEL=info
+LOG_DIR=.ralph/logs
+
+# === Completion Signal ===
+# Ralph monitors for this to know when task is complete
+EXIT_SIGNAL="RALPH_COMPLETE"

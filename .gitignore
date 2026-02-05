@@ -51,3 +51,7 @@ yarn-error.log
 # Logs
 *.log
 logs/
+
+# Ralph (autonomous agent)
+.ralph/logs/
+.ralph/checkpoints/
