@@ -47,20 +47,29 @@ mcp__anki__modelNames
 - For definitions/lists, suggest Cloze
 - For vocabulary, suggest Basic (and reversed card)
 
-### 4. Design the Card
+### 4. Design the Card (Mastery-Oriented)
 
-Apply card design principles:
+Apply mastery design principles:
 
-**Atomic**: One fact per card
-**Clear**: Unambiguous question
-**Contextual**: Enough context to avoid confusion
+**Deep understanding**: Test reasoning, not just recall
+**Precise terminology**: Use correct technical terms
+**Connected**: Link to related concepts
+**Applicable**: Enable applying knowledge, not just recognizing it
+
+#### Mastery vs Elementary
+
+| Elementary (avoid) | Mastery (prefer) |
+|-------------------|------------------|
+| "What is X?" | "When would you choose X over Y, and why?" |
+| "Define X" | "How does X differ from Y, and when is each appropriate?" |
+| Single-word answer | Trade-offs, reasoning, connections |
 
 For Basic:
-- Front: Clear, specific question
-- Back: Concise, complete answer
+- Front: Question that tests understanding (why, when, how, trade-offs)
+- Back: Answer with reasoning, not just facts
 
 For Cloze:
-- Create fill-in-the-blank with `{{c1::hidden}}`
+- Include context that explains significance: `{{c1::term}} differs from Y in that [distinction]`
 - Use multiple cloze numbers for separate cards
 
 ### 5. Check for Duplicates

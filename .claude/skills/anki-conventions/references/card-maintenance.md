@@ -79,7 +79,7 @@ Just catch up tomorrow. This barely qualifies as a backlog.
 
 ## Card Reformulation Signals
 
-When a card consistently fails, don't just keep failing it. Reformulate.
+When a card consistently fails, don't just keep failing it. Reformulate for mastery.
 
 ### Signs a Card Needs Rewriting
 
@@ -90,28 +90,43 @@ When a card consistently fails, don't just keep failing it. Reformulate.
 | Answer feels arbitrary | Missing connection to understanding |
 | Can't remember what question means | Poor context or phrasing |
 | Answer is too long to recall | Not atomic enough |
+| **Know answer but can't apply it** | **Tests recognition, not understanding** |
+| **Feels too elementary** | **Needs depth - add "why" and trade-offs** |
 
 ### Reformulation Strategies
 
-**Split the card:**
-- One fact per card
-- Break lists into individual items
-- Separate "what" from "why"
+**Deepen for Mastery:**
+- Transform "what" questions to "why" or "when"
+- Add trade-offs and decision guidance
+- Connect to related concepts and principles
+- Include reasoning in the answer
 
-**Add context:**
+| Elementary | Mastery |
+|------------|---------|
+| "What is X?" | "When would you choose X over Y?" |
+| "Define X" | "How does X differ from Y, and when is each used?" |
+| Single fact | Trade-offs + reasoning + connections |
+
+**Split the card:**
+- One concept per card (with appropriate depth)
+- Break lists into individual items with reasoning for each
+- Separate related concepts into comparison cards
+
+**Add context and connections:**
 - Include enough clues to disambiguate
 - Reference related concepts
-- Add mnemonic hints if helpful
+- Explain why this matters
 
-**Rephrase:**
-- Make question more specific
-- Avoid yes/no formats
-- Test recall, not recognition
+**Rephrase for understanding:**
+- Ask about reasoning, not just facts
+- Test application, not recognition
+- Use precise technical terminology
 
 **Delete:**
 - If you don't care about the content
 - If it's outdated or incorrect
 - If it's better learned through practice
+- **If it's too elementary and not worth deepening**
 
 ## Leech Management
 

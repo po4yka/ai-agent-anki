@@ -10,6 +10,37 @@ description: >
 
 # Anki Conventions
 
+## Card Philosophy: Mastery-Oriented
+
+Cards are designed for deep understanding and terminology mastery, not elementary-level learning.
+
+| Principle | Description |
+|-----------|-------------|
+| **Precise terminology** | Use correct technical terms, not simplified language |
+| **Depth over brevity** | Answers can include nuanced explanations and connections |
+| **Conceptual connections** | Link to related concepts and underlying principles |
+| **Expert-level questions** | Require understanding, not just recognition |
+| **Why and how** | Focus on reasoning alongside facts |
+
+### Elementary vs Mastery
+
+| Aspect | Elementary (avoid) | Mastery (prefer) |
+|--------|-------------------|------------------|
+| Question style | "What does X do?" | "When would you choose X over Y, and why?" |
+| Terminology | "The thing that stores data" | "The data structure with O(1) lookup" |
+| Answer depth | "X is a type of Y" | "X is a Y that provides Z because of W" |
+| Connections | Isolated fact | Links to related concepts |
+| Target | Recognition | Application and reasoning |
+
+### Mastery Quality Checklist
+
+- [ ] Uses precise technical terminology
+- [ ] Question requires understanding, not just recall
+- [ ] Answer explains "why" or "how", not just "what"
+- [ ] Connects to related concepts or principles
+- [ ] Would help someone apply knowledge, not just recognize it
+- [ ] Tests at the level of a practitioner, not a beginner
+
 ## User Preferences
 
 **Longer technical cards are acceptable.** For programming topics, the atomic rule is relaxed:
@@ -40,10 +71,11 @@ Combine with spaces (AND) or `OR`.
 
 ### Card Design Principles
 
-1. **Atomic**: One fact per card (relaxed for programming)
-2. **Clear**: Unambiguous question, single correct answer
-3. **Contextual**: Enough context to avoid ambiguity
-4. **Connected**: Reference related concepts
+1. **Atomic**: One concept per card (relaxed for programming)
+2. **Precise**: Use correct terminology, not simplified language
+3. **Deep**: Test understanding and reasoning, not just recall
+4. **Connected**: Link to related concepts and principles
+5. **Applicable**: Enable applying knowledge, not just recognizing it
 
 ### FSRS Quick Setup
 

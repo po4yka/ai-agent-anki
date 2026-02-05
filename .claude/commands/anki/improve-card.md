@@ -58,34 +58,41 @@ Back:
 
 ### 3. Analyze Against Best Practices
 
-Evaluate the card against these criteria (from references/card-patterns.md and references/programming-cards.md):
+Evaluate the card against mastery-oriented criteria:
+
+#### Mastery Depth Check
+- [ ] Tests understanding, not just recall
+- [ ] Asks "why" or "when", not just "what"
+- [ ] Uses precise technical terminology
+- [ ] Connects to related concepts or principles
+- [ ] Would help apply knowledge, not just recognize it
+
+#### Elementary Patterns to Improve
+- [ ] "What is X?" -> "When would you choose X over Y?"
+- [ ] "Define X" -> "How does X differ from Y?"
+- [ ] Single-fact answer -> Include trade-offs or reasoning
+- [ ] Isolated concept -> Connect to related principles
 
 #### Atomic Check
-- [ ] Tests only one fact/concept
-- [ ] Could this be split into multiple cards?
-
-#### Clarity Check
-- [ ] Question is unambiguous
-- [ ] Has exactly one correct answer
-- [ ] Avoids yes/no format
-- [ ] Sufficient context to avoid confusion
+- [ ] Tests one concept (with appropriate depth)
+- [ ] Could be split if covering multiple unrelated concepts
 
 #### Answer Quality
-- [ ] Answer is concise (not a paragraph)
-- [ ] Answer is complete (not too terse)
-- [ ] For code: syntax highlighted, 1-10 lines
+- [ ] Includes reasoning, not just facts
+- [ ] For technical: includes trade-offs and when-to-use
+- [ ] For code: includes why, not just syntax
 
 #### Technical Card Rules (if programming-related)
-- [ ] Tests concepts/patterns, not implementations
-- [ ] Code has sufficient context
-- [ ] Gotchas include related pitfalls
-- [ ] Not testing rapidly-changing API details
+- [ ] Tests reasoning about patterns, not just syntax
+- [ ] Includes trade-offs for decisions
+- [ ] Explains "why" alongside "what"
+- [ ] Gotchas include prevention strategies
 
 #### Common Issues
-- [ ] "Orphan knowledge" - lacks connection to other concepts
-- [ ] Passive recognition trap - too easy to guess
-- [ ] Sets without structure - testing enumeration
-- [ ] Vague question - multiple valid answers
+- [ ] Surface-level question - tests recognition, not understanding
+- [ ] Missing reasoning - answer lacks "why" or "how"
+- [ ] Simplified terminology - should use precise technical terms
+- [ ] Isolated fact - needs connection to related concepts
 
 ### 4. Generate Improvement Suggestions
 
@@ -166,23 +173,27 @@ Card 3: [focused question 3]
 Create additional cards? [y/N]
 ```
 
-### Reformulating Questions
+### Reformulating Questions (Elementary -> Mastery)
 
-| Original Pattern | Improved Pattern |
-|------------------|------------------|
-| "What is X?" (vague) | "What does X do in context Y?" |
-| "Yes/No: Is X true?" | "What type of X is Y?" |
-| "List all X" | Multiple cards, one per item |
-| "Explain X" | "What are the 2 key aspects of X?" |
+| Elementary Pattern | Mastery Pattern |
+|-------------------|-----------------|
+| "What is X?" | "When would you choose X over Y, and what trade-offs does this involve?" |
+| "Define X" | "How does X differ from [similar concept], and when is each appropriate?" |
+| "What does X do?" | "Why was X designed this way, and what problems does it solve?" |
+| "Yes/No: Is X true?" | "Under what conditions is X true, and what are the implications?" |
+| "List all X" | Multiple cards explaining why each item matters |
+| "Explain X" | "What reasoning underlies X, and how would you apply it?" |
 
-### Improving Code Cards
+### Improving Code Cards (Mastery)
 
-| Issue | Fix |
-|-------|-----|
-| Too long (>10 lines) | Extract core pattern |
-| No output shown | Add expected output |
-| Missing context | Add language tag, brief setup |
-| Tests implementation | Refocus on concept/pattern |
+| Issue | Mastery Fix |
+|-------|-------------|
+| Tests syntax only | Add "when to use" and trade-offs |
+| Missing "why" | Explain reasoning behind the pattern |
+| No decision guidance | Add when to choose this vs alternatives |
+| Isolated example | Connect to underlying principle |
+| Too long (>10 lines) | Extract core pattern, keep reasoning |
+| Missing context | Add language tag, use case, pitfalls |
 
 ## Error Handling
 
@@ -211,4 +222,10 @@ Create additional cards? [y/N]
 
 ## User Preference Note
 
-For programming/technical cards, longer answers with code snippets and contextual explanations are acceptable. The atomic rule is relaxed for technical content.
+**Mastery-oriented cards preferred.** Cards should be designed for deep understanding:
+- Use precise technical terminology, not simplified language
+- Test understanding and reasoning, not just recall
+- Include trade-offs, "why", and conceptual connections
+- Longer answers with depth are better than brief surface-level facts
+
+For programming/technical cards, longer answers with code snippets, trade-offs, and contextual explanations are expected. The atomic rule is relaxed for technical content that requires depth.
