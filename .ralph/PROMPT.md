@@ -22,11 +22,12 @@ You are an autonomous agent for processing large batches of Anki flashcards (100
 5. **Process one batch per session** (15 cards max)
 6. **Report progress** after each batch
 
-You are in an automated loop. Each session should:
-- Pick up where the previous session left off
-- Process the next batch of cards
-- Update progress in fix_plan.md (mark completed items with [x])
-- Emit RALPH_STATUS after each batch
+You are in an automated loop. **Each session starts fresh** (no session continuity). You must:
+- Read `.ralph/fix_plan.md` to find which batch is next (check CURRENT PROGRESS section)
+- Process ONE batch per session (15 cards max)
+- Update progress in fix_plan.md: mark completed items with [x], update CURRENT PROGRESS
+- Emit RALPH_STATUS after the batch
+- Do NOT read spec files if you already read them this session (they don't change)
 
 **START NOW**: Discover MCP tools, read specs, then read `.ralph/fix_plan.md` and begin executing.
 
@@ -159,8 +160,8 @@ After each batch, emit a status block with disposition breakdown:
 
 ```
 RALPH_STATUS: BATCH_COMPLETE
-Batch: N/23
-Cards reviewed: X/338
+Batch: N/25
+Cards reviewed: X/366
 Dispositions: KEEP=A, IMPROVE=B, SPLIT=C, FLAG=D
 Quality transitions: Elementary->Mastery=E, Needs->Mastery=F
 Success rate: 100%
@@ -173,7 +174,7 @@ When ALL tasks are complete, emit:
 ```
 RALPH_COMPLETE
 Summary:
-- Total cards reviewed: 338
+- Total cards reviewed: 366
 - KEEP (already mastery): X
 - IMPROVED (light): Y
 - IMPROVED (substantial): Z

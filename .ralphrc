@@ -12,9 +12,10 @@ CLAUDE_TIMEOUT_MINUTES=30
 IDLE_TIMEOUT_MINUTES=5
 
 # === Session Management ===
-# Critical for maintaining Anki connection across batches
-SESSION_CONTINUITY=true
-SESSION_EXPIRY_HOURS=4
+# DISABLED: Session continuity causes context window overflow after ~10 batches.
+# Each loop starts fresh, reads fix_plan.md for progress, and picks up next batch.
+# This prevents "Prompt is too long" API errors.
+SESSION_CONTINUITY=false
 
 # === Checkpointing ===
 # Enable checkpoints to resume after failures
