@@ -4,8 +4,14 @@ Detailed lifecycle for processing cards through the ralph batch system.
 
 ## Card Lifecycle
 
+### Creation Lifecycle
 ```
 Source → Parse → Validate → Deduplicate → Create → Verify → Tag
+```
+
+### Review Lifecycle (see card-review.md)
+```
+Fetch → Analyze → Classify → Improve → Verify → Tag
 ```
 
 ### 1. Source

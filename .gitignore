@@ -55,3 +55,15 @@ logs/
 # Ralph (autonomous agent)
 .ralph/logs/
 .ralph/checkpoints/
+.ralph/progress.json
+.ralph/status.json
+.ralph/.call_count
+.ralph/.circuit_breaker_*
+.ralph/.claude_session_id
+.ralph/.exit_signals
+.ralph/.last_reset
+.ralph/.loop_start_sha
+.ralph/.ralph_session
+.ralph/.ralph_session_history
+.ralph/.response_analysis
+.ralph/live.log

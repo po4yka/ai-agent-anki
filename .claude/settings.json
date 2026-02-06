@@ -2,8 +2,14 @@
   "hooks": {
     "Stop": [
       {
-        "command": ".claude/hooks/anki-session-capture.sh",
-        "timeout": 5000
+        "matcher": {},
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/hooks/anki-session-capture.sh",
+            "timeout": 5000
+          }
+        ]
       }
     ]
   },
@@ -13,7 +19,7 @@
     "mcpServers": {
       "anki": {
         "command": "npx",
-        "args": ["-y", "@ankimcp/anki-mcp-server"]
+        "args": ["-y", "@ankimcp/anki-mcp-server", "--stdio"]
       },
       "obsidian": {
         "disabled": true

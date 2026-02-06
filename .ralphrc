@@ -23,7 +23,7 @@ CHECKPOINT_INTERVAL_CALLS=10
 
 # === Tool Allowlist ===
 # All Anki MCP tools plus file operations for logging
-ALLOWED_TOOLS="mcp__anki__addNote,mcp__anki__findNotes,mcp__anki__notesInfo,mcp__anki__updateNoteFields,mcp__anki__deleteNotes,mcp__anki__deckActions,mcp__anki__modelNames,mcp__anki__sync,Read,Write,Edit,Glob,Grep,Bash"
+ALLOWED_TOOLS="mcp__anki__addNote,mcp__anki__findNotes,mcp__anki__notesInfo,mcp__anki__updateNoteFields,mcp__anki__deleteNotes,mcp__anki__deckActions,mcp__anki__modelNames,mcp__anki__sync,mcp__anki__mediaActions,mcp__anki__tagActions,mcp__anki__getTags,Read,Write,Edit,Glob,Grep,Bash,ToolSearch"
 
 # === Logging ===
 LOG_LEVEL=info
